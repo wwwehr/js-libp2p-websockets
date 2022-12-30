@@ -47,8 +47,8 @@ Loading this module through a script tag will make it's exports available as `Li
 ### Constructor properties
 
 ```js
-import { createLibp2pNode } from 'libp2p'
-import { webSockets } from '@libp2p/webrtc-direct'
+import { createLibp2p } from 'libp2p'
+import { websockets } from '@libp2p/websockets'
 
 const node = await createLibp2p({
   transports: [
@@ -79,7 +79,7 @@ The available filters are:
 ## Libp2p Usage Example
 
 ```js
-import { createLibp2pNode } from 'libp2p'
+import { createLibp2p } from 'libp2p'
 import { websockets } from '@libp2p/websockets'
 import filters from '@libp2p/websockets/filters'
 import { mplex } from '@libp2p/mplex'
